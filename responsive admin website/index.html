@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>NGO admin dashboard</title>
+</head>
+<body>
+    <!--------------the aside secdtion----------->
+
+    <div class="container">
+
+        <aside id="aside">
+
+            <div class="top">
+                <a href=""><img src="images/logo.png" class="logo"></a>
+                <div>
+                    <i class="fa fa-times close" onclick="hideMenu()"></i>
+                </div>
+            </div>
+    
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <i class="fa fa-th-large" aria-hidden="true"></i>
+                    <h3> Dashboard </h3>
+                </a>
+                <a href="#">
+                    <i class="fa fa-users " aria-hidden="true"></i>
+                    <h3> Customers </h3>
+                </a>
+                <a href="#">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    <h3> Orders </h3>
+                </a>
+                <a href="#">
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    <h3> Analysis </h3>
+                </a>
+                <a href="#">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <h3> Messages </h3>
+                    <span class="message-count"> 17 </span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-ticket" aria-hidden="true"></i>
+                    <h3> Products </h3>
+                </a>
+                <a href="#">
+                    <i class="fa fa-question" aria-hidden="true"></i>
+                    <h3> Reports </h3>
+                </a>
+                <a href="#">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <h3> Setting </h3>
+                </a>
+                <a href="#">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    <h3> Add product </h3>
+                </a>
+                <a href="#">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <h3> Log out </h3>
+                </a>
+                
+            </div>
+        </aside>
+               
+<!----------------aside ends here-->
+
+        <main>
+
+            <h1>Dashboard</h1>
+    
+            <div class="date">
+                <input type="date" name="date">
+            </div>
+    
+            <div class="insights">
+                <div class="sales">
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>$18,030</h1>
+                        </div>
+                        <div class="right">
+                            <svg>
+                                <circle cx = "38" cy = "38" r = "36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>83%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small>
+                        <p>The Last 24HR</p>
+                    </small>
+                </div>
+               
+               
+                <div class="expenses">
+                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>$10,220</h1>
+                        </div>
+                        <div class="right">
+                            <svg>
+                                <circle cx = "38" cy = "38" r = "36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>52%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small>
+                        <p>The Last 24HR</p>
+                    </small>
+                </div>
+                
+               
+                <div class="income">
+                    <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Income</h3>
+                            <h1>$25,830</h1>
+                        </div>
+                        <div class="right">
+                            <svg>
+                                <circle cx = "38" cy = "38" r = "36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>38%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small>
+                        <p>The Last 24HR</p>
+                    </small>
+                </div>
+                
+                
+            </div>
+
+            <div class="customer_order">
+                <h2>Our Customer's Order</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Products</th>
+                            <th>Delivery Location</th>
+                            <th>Serial No</th>
+                            <th>Shipping</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>3 bags of thailand rice</td>
+                            <td>Ojota, Lagos state</td>
+                            <td>#435</td>
+                            <td class="progressing">pending</td>
+                            <td class="detailed">details</td>
+                        </tr>
+                        <tr>
+                            <td>3 bags of red corn</td>
+                            <td>Owerri, Imo State</td>
+                            <td>#422</td>
+                            <td class="progressing">pending</td>
+                            <td class="detailed">details</td>
+                        </tr>
+                        <tr>
+                            <td> 2 bags of Honey beans</td>
+                            <td>Warri, Delta State</td>
+                            <td>#645</td>
+                            <td class="progressing">pending</td>
+                            <td class="detailed">details</td>
+                        </tr>
+                        <tr>
+                            <td> 25 cartons of tomatoes </td>
+                            <td>ijebu, Lagos state</td>
+                            <td>#965</td>
+                            <td class="progressing">pending</td>
+                            <td class="detailed">details</td>
+                        </tr>
+                        <tr>
+                            <td>15 Gallon of Vino oil</td>
+                            <td>Zaria city, Kaduna State</td>
+                            <td>#777</td>
+                            <td class="progressing">pending</td>
+                            <td class="detailed">details</td>
+                        </tr>
+                        <tr>
+                            <td>4 custard of beans</td>
+                            <td> Port Harcourt</td>
+                            <td>#342</td>
+                            <td class="progressing">pending</td>
+                            <td class="detailed">details</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <a href="#"> Show all</a>
+            </div>
+            
+    
+    
+        </main>
+       
+<!----------------main ends here-->
+
+        <div class="right">
+            <div class="top">
+                <i class="fa fa-bars bar" onclick="showMenu()"></i>
+                <div class="icon-toggler">
+                    <i class="fa fa-sun-o active"></i>
+                    <i class="fa fa-moon-o"></i>
+                </div>
+                <div class="profile_info">
+                  <div class="info">
+                    <p> <span class="greetings">Good Morning,</span> <b>Rowland</b></p>
+                  </div>
+                    <div class="profile_photo">
+                        <img src="images/dp-1.jpg" alt="">
+                    </div>
+                </div>
+               
+            </div>
+            <div class="update_info">
+                <h2>Recent Orders</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="customer_profile">
+                            <img src="images/dp-2.jpg" alt="">
+                        </div>
+                        <div class="customer_info">
+                            <p>
+                                <b>Karim Benzema</b>  recieved his order
+                            </p>
+                            <small>1 minute ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="customer_profile">
+                            <img src="images/dp-3.jpg" alt="">
+                        </div>
+                        <div class="customer_info">
+                            <p>
+                                <b>Rodrygo Goes </b>recieved his order
+                            </p>
+                            <small>1 minute ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="customer_profile">
+                            <img src="images/dp-4.jpg" alt="">
+                        </div>
+                        <div class="customer_info">
+                            <p>
+                                <b>Eden Hazard</b> recieved his order
+                            </p>
+                            <small>1 minute ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!---------the sales analytics------>
+             <div class="sales_analytics">
+                 <h2>Sales Analytics</h2>
+                 <div class="online_stores">
+                     <div>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                     </div>
+                    <div class="right">
+                        <div class="note">
+                            <p>ONLINE ORDERS</p>
+                            <small>
+                                Last 24 hours
+                            </small>
+                        </div>
+                        <h5>+72%</h5>
+                        <h3>2,934</h3>
+                    </div>
+                 </div>
+                 <div class="online_stores offline">
+                    <div>
+                       <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    </div>
+                    <div class="right">
+                        <div class="note ">
+                            <p>OFFLINE ORDERS</p>
+                            <small>
+                                Last 24 hours
+                            </small>
+                        </div>
+                            <h5 class="bad">-35%</h5>
+                            <h3>1,234</h3>
+                    </div>
+                </div>
+                <div class="online_stores customers">
+                    <div>
+                       <i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
+                    <div class="right">
+                        <div class="note">
+                            <p>NEW CUSTOMERS</p>
+                            <small>
+                                Last 24 hours
+                            </small>
+                        </div>
+                        <h5>+20%</h5>
+                        <h3>560</h3>
+                    </div>
+                </div>
+                <div class="add_product">
+                    <div class="add_icon">
+                        <i class="fa fa-plus"></i> 
+                    </div>
+                    <div class="adp">
+                        <p>Add product</p>
+                    </div>
+                </div>
+             </div>
+             
+        
+        </div>
+
+       
+        </div>
+
+
+   
+<script src="script.js">
+
+</script>
+</body>
+</html>
